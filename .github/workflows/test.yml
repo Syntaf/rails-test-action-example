@@ -27,4 +27,4 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Run Tests
-        uses: syntaf/rails-minitest-action
+        uses: syntaf/rails-minitest-action@v0
