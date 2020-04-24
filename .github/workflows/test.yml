@@ -27,7 +27,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Run Tests
-        uses: syntaf/rails-minitest-action@v0
+        uses: syntaf/rails-minitest-action@master
         with:
           ruby-version: '2.6'
           database-url: 'postgres://user@db/rails_test_action_example_test'
