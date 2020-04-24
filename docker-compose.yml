@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=dev
+
+  action:
+    image: minitest
+    environment:
+      - GITHUB_WORKSPACE=/github/workspace
+      # - DATABASE_URL=postgres://postgres@db/rails_test_action_example_test
+    volumes:
+      - .:/github/workspace
+    depends_on:
+      - db

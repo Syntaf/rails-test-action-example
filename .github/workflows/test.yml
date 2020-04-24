@@ -13,7 +13,7 @@ jobs:
       db:
         image: postgres:11
         env:
-          POSTGRES_USER: user
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: dev
         ports:
           - 5432:5432
@@ -37,5 +37,5 @@ jobs:
         uses: syntaf/rails-minitest-action@master
         with:
           ruby-version: '2.6'
-          database-url: 'postgres://user@db/rails_test_action_example_test'
+          database-url: 'postgres://postgres@db/rails_test_action_example_test'
           database-password: 'dev'
