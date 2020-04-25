@@ -34,8 +34,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gem-
       - name: Run Tests
-        uses: syntaf/rails-minitest-action@master
+        uses: syntaf/rails-test-action@master
         with:
-          ruby-version: '2.6'
           database-url: 'postgres://postgres@db/rails_test_action_example_test'
           database-password: 'dev'
