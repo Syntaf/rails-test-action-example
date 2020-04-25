@@ -8,7 +8,7 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test 'Is a cheeto' do
-    product = products(:instapot)
+    product = products(:pork)
 
     assert_not product.cheeto?
   end
