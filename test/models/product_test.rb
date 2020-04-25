@@ -10,6 +10,6 @@ class ProductTest < ActiveSupport::TestCase
   test 'Is a cheeto' do
     product = products(:instapot)
 
-    assert_not product.cheeto?
+    assert product.cheeto?
   end
 end
