@@ -11,7 +11,7 @@ services:
     image: minitest
     environment:
       - GITHUB_WORKSPACE=/github/workspace
-      ## - DATABASE_URL=postgres://postgres@db/rails_test_action_example_test
+      ### - DATABASE_URL=postgres://postgres@db/rails_test_action_example_test
     volumes:
       - .:/github/workspace
     depends_on:
